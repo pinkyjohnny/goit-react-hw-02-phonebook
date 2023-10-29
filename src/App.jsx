@@ -88,7 +88,6 @@ export class App extends React.Component {
 //       oldName => oldName.name.toLowerCase() === contact.name.toLowerCase()
 //     );
 
-//     const id = nanoid();
 //     const newContact = { ...contact, id };
 
 //     this.setState(prev => ({ contacts: [...prev.contacts, newContact] }));
