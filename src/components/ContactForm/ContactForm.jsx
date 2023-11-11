@@ -6,6 +6,7 @@ import {
   Labelfirst,
   Labelsecond,
 } from './ContactForm.styled';
+import { PropTypes } from 'prop-types';
 
 const INITIAL_STATE = {
   name: '',
@@ -63,3 +64,7 @@ export class ContactForm extends React.Component {
     );
   }
 }
+
+ContactForm.propTypes = {
+  onAddContact: PropTypes.func.isRequired,
+};

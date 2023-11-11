@@ -1,6 +1,7 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
 import { ContactItem, Contacts, DeleteButton } from './ContactList.styled';
+import { PropTypes } from 'prop-types';
 
 export const ContactList = ({ options, onDeleteContact }) => {
   return (
@@ -15,4 +16,9 @@ export const ContactList = ({ options, onDeleteContact }) => {
       ))}
     </Contacts>
   );
+};
+
+ContactList.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+  onDeleteContact: PropTypes.func.isRequired,
 };
